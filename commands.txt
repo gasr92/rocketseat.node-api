@@ -1,3 +1,5 @@
 npm init -y
 npm install express // micro framework que ajuda a lidar com rotas e views
-node server.js // rodar somente após configurar o arquivo criado manualmente server.js
+node server.js // rodar somente apos configurar o arquivo criado manualmente server.js
+npm install -D nodemon // reinicializa automaticamente o servidor
+npm run dev // rodar apos adicionar DEV ao package.json
