@@ -1,0 +1,3 @@
+npm init -y
+npm install express // micro framework que ajuda a lidar com rotas e views
+node server.js // rodar somente após configurar o arquivo criado manualmente server.js
