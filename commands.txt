@@ -3,3 +3,7 @@ npm install express // micro framework que ajuda a lidar com rotas e views
 node server.js // rodar somente apos configurar o arquivo criado manualmente server.js
 npm install -D nodemon // reinicializa automaticamente o servidor
 npm run dev // rodar apos adicionar DEV ao package.json
+docker pull mongo // baixa ro MongoDB dentro do docker
+docker run --name mongodb -p  27017:27017 -d mongo // -p especifica qual porta será redirecionada para o docker quando acessada e -d o nome da imagem
+docker ps // ver qusis instâncias do mongo estão rodando
+docker start {id} // o id é obtido atraves de coker ps -a
