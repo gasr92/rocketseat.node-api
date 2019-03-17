@@ -8,3 +8,5 @@ docker run --name mongodb -p  27017:27017 -d mongo // -p especifica qual porta s
 docker ps // ver qusis instâncias do mongo estão rodando
 docker start {id} // o id é obtido atraves de coker ps -a
 npm install require-dir // permite fazer require em um diretorio, e nao arquivo por arquivo
+npm install mongoose-paginate
+npm install cors // para permitir que outras aplicações acessem o servidor

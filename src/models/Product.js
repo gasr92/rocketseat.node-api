@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const mongoosePaginate = require('mongoose-paginate');
 
 
 // o id do banco de dados é gerado automaticamente
@@ -21,4 +22,6 @@ const ProductSchema = new mongoose.Schema({
     },
 });
 
+// faz com o que o model utilize o plugin de paginacao, para que possa ser utilizado no controller
+ProductSchema.plugin(mongoosePaginate);
 mongoose.model('Product', ProductSchema);
